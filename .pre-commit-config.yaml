@@ -1,0 +1,9 @@
+repos:
+  - repo: https://github.com/compilerla/conventional-pre-commit
+    rev: v1.2.0
+    hooks:
+      - id: conventional-pre-commit
+        name: Conventional Commit (local)
+        entry: conventional-pre-commit.sh
+        language: script
+        stages: [commit-msg]
